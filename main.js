@@ -1,7 +1,16 @@
-alert("Khabib Time!")
-confirm("Click OK if you're willing to continue!")
+alert(
+  "Khabib Time! \n Welcome to the UFC Lightweight Championship fight! \n You're in the last round against the champion, Khabib Nurmagomadov. You made it to the 5th round against the champ, but you're exhausted. You must make a few crucial decisions in this last round."
+)
 
-alert("The round starts and the champ walks you down...")
+const gameOver = false
+const gameCrash = false
+const start = confirm("Click OK if you're willing to continue!")
+if (start == false) {
+  alert("Come get smashed next time!")
+  gameCrash = true
+} else {
+  alert("The round starts and the champ walks you down...")
+}
 
 const outcomeOne =
   "Outcome 1: BOTH SHOTS CONNECTED AND ITS A DOUBLE KO! \n Match ended in a draw."
@@ -9,8 +18,6 @@ const outcomeTwo =
   "Outcome 2: He grabbed your leg and threw you down. He ended up on your back on you just got choked out! \n GAME OVER!"
 const outcomeThree =
   "Outcome 3: Now hes on smashing you for the next 4 minutes and 50 seconds. \n GAME OVER!"
-
-const gameOver = false
 
 const levelOne = prompt(
   " You decide to... \n Option 1: Keep the fight standing. \n Option 2: Shoot for a takedown."
@@ -25,11 +32,9 @@ if (levelOne == "1") {
   alert(outcomeThree)
   gameOver = true
 } else {
-  message = "???"
-  gameOver = true
+  alert("You crashed the game!!!")
+  gameCrash = true
 }
-
-gameOver = false
 
 let levelTwo = prompt(
   "Option 3: Start working your jabs. \n Option 4: Look for a head kick!"
@@ -41,11 +46,9 @@ if (levelTwo == "3") {
   alert(outcomeTwo)
   gameOver = true
 } else {
-  message = "???"
+  alert("You crashed the game!!!")
   gameOver = true
 }
-
-gameOver = false
 
 let levelThree = prompt(
   "Option 5: Put your head down and throw a Overhand Right of your own! \n Option 6: Lean back a bit and throw a heavy Uppercut!"
@@ -60,6 +63,6 @@ if (levelThree == "5") {
   alert(outcomeOne)
   gameOver = true
 } else {
-  message = "???"
+  alert("You crashed the game!!!")
   gameOver = true
 }

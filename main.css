@@ -1,0 +1,21 @@
+body {
+  background-image: url(https://media.gq-magazine.co.uk/photos/5d13ad7a533a23377fc63ab7/master/w_1920%2cc_limit/khabib-nurmagomedov-02-gq-5oct18_getty_b.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 650px auto;
+  grid-template-rows: auto 35px;
+  width: 1410px;
+  height: 815px;
+}
+
+.blnt {
+  display: grid;
+  grid-column: 2;
+  grid-row: 2;
+  font-size: xxx-large;
+  margin-top: -11px;
+}
