@@ -17,7 +17,7 @@ const outcomeOne =
 const outcomeTwo =
   "Outcome 2: He grabbed your leg and threw you down. He ended up on your back on you just got choked out! \n GAME OVER!"
 const outcomeThree =
-  "Outcome 3: Now hes on smashing you for the next 4 minutes and 50 seconds. \n GAME OVER!"
+  "Outcome 3: Now hes on top of you and you're getting smashed for the next 4 minutes and 50 seconds. \n GAME OVER!"
 
 const levelOne = prompt(
   " You decide to... \n Option 1: Keep the fight standing. \n Option 2: Shoot for a takedown."
@@ -58,11 +58,9 @@ if (levelThree == "5") {
   alert(
     "It was a fake Overhand. While you weren't looking, he shot for a takedown."
   )
-  alert()
+  alert(outcomeThree)
 } else if (levelThree == "6") {
   alert(outcomeOne)
-  gameOver = true
 } else {
   alert("You crashed the game!!!")
-  gameOver = true
 }
